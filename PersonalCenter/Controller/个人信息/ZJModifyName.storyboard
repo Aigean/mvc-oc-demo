@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PMu-Qb-Nlu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modify Name View Controller-->
+        <scene sceneID="Jk3-Fk-Mvx">
+            <objects>
+                <viewController id="PMu-Qb-Nlu" customClass="ZJModifyNameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Bl-xN-NEc"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bK-2t-JAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5TN-Wx-TLg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E0L-59-SnK">
+                                <frame key="frameInset" minY="40" width="320" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inco_姓名_tb" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-ux-F6K">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="V1N-Cw-4ef"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-zh-8Tx">
+                                        <frame key="frameInset" minX="40" minY="8" width="272" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Hwy-zh-8Tx" secondAttribute="bottom" constant="8" id="0Qa-iu-HEq"/>
+                                    <constraint firstAttribute="height" constant="44" id="5cd-V3-aLC"/>
+                                    <constraint firstItem="Hwy-zh-8Tx" firstAttribute="leading" secondItem="Ecw-ux-F6K" secondAttribute="trailing" constant="8" id="A3c-4P-UTj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hwy-zh-8Tx" secondAttribute="trailing" constant="8" id="AFt-I6-dMl"/>
+                                    <constraint firstItem="Hwy-zh-8Tx" firstAttribute="top" secondItem="E0L-59-SnK" secondAttribute="top" constant="8" id="JBs-5E-EF6"/>
+                                    <constraint firstItem="Ecw-ux-F6K" firstAttribute="leading" secondItem="E0L-59-SnK" secondAttribute="leading" constant="12" id="KJ7-r0-uVz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ecw-ux-F6K" secondAttribute="bottom" constant="12" id="UdI-Ni-ddN"/>
+                                    <constraint firstItem="Ecw-ux-F6K" firstAttribute="top" secondItem="E0L-59-SnK" secondAttribute="top" constant="12" id="dw2-B6-TRd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4M-Vx-mdR">
+                                <frame key="frameInset" minX="20" minY="114" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.7843137255" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9o7-Nf-Vvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="修    改">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyNameClick:" destination="PMu-Qb-Nlu" eventType="touchUpInside" id="JjR-bK-IA3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="E0L-59-SnK" secondAttribute="trailing" id="9ce-0Q-1Q6"/>
+                            <constraint firstItem="p4M-Vx-mdR" firstAttribute="top" secondItem="E0L-59-SnK" secondAttribute="bottom" constant="30" id="F3u-yO-vTw"/>
+                            <constraint firstAttribute="trailing" secondItem="p4M-Vx-mdR" secondAttribute="trailing" constant="20" id="XWv-e4-KOB"/>
+                            <constraint firstItem="p4M-Vx-mdR" firstAttribute="leading" secondItem="5TN-Wx-TLg" secondAttribute="leading" constant="20" id="jJg-Jl-3Hp"/>
+                            <constraint firstItem="E0L-59-SnK" firstAttribute="leading" secondItem="5TN-Wx-TLg" secondAttribute="leading" id="prS-Am-VN0"/>
+                            <constraint firstItem="E0L-59-SnK" firstAttribute="top" secondItem="6Bl-xN-NEc" secondAttribute="bottom" constant="20" id="srS-24-MJ4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="Hwy-zh-8Tx" id="DAc-WS-eJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdR-28-oKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="inco_姓名_tb" width="23" height="23"/>
+    </resources>
+</document>

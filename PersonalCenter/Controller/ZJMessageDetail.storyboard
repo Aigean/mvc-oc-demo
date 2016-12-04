@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RVP-H1-aTP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message Detail View Controller-->
+        <scene sceneID="Q54-Ia-tAZ">
+            <objects>
+                <viewController id="RVP-H1-aTP" customClass="ZJMessageDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mI9-hS-HbG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hnl-zQ-lnc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zxU-U7-apL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ui-Jd-iWs">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="bqR-YO-j1m"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojz-gP-LRg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="esb-Vm-4UZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c31-S2-HWa">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ojz-gP-LRg" secondAttribute="trailing" id="3Ua-D5-sqR"/>
+                            <constraint firstItem="ojz-gP-LRg" firstAttribute="top" secondItem="7Ui-Jd-iWs" secondAttribute="bottom" constant="10" id="3sb-J7-bdE"/>
+                            <constraint firstAttribute="trailing" secondItem="c31-S2-HWa" secondAttribute="trailing" constant="10" id="Gg1-fc-Ih2"/>
+                            <constraint firstItem="c31-S2-HWa" firstAttribute="leading" secondItem="zxU-U7-apL" secondAttribute="leading" constant="10" id="Qqe-OQ-EF9"/>
+                            <constraint firstItem="c31-S2-HWa" firstAttribute="top" secondItem="ojz-gP-LRg" secondAttribute="bottom" constant="8" id="bGk-7K-xHO"/>
+                            <constraint firstItem="7Ui-Jd-iWs" firstAttribute="top" secondItem="zxU-U7-apL" secondAttribute="top" id="gaQ-CV-lUg"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ui-Jd-iWs" secondAttribute="trailing" id="uI5-su-jyh"/>
+                            <constraint firstItem="7Ui-Jd-iWs" firstAttribute="leading" secondItem="zxU-U7-apL" secondAttribute="leading" id="xgh-xY-oDi"/>
+                            <constraint firstItem="ojz-gP-LRg" firstAttribute="leading" secondItem="zxU-U7-apL" secondAttribute="leadingMargin" id="yVX-Da-OFr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="c31-S2-HWa" id="3FB-Ul-xKU"/>
+                        <outlet property="headLineLabel" destination="ojz-gP-LRg" id="s92-nn-0tN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Be-OY-c4y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536.79999999999995" y="-134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
